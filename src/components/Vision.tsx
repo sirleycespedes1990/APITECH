@@ -2,8 +2,6 @@
 
 export default function Vision() {
   return (
-    <div>
-        
         <section id="inicio" className="py-20 bg-amber-100">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-8 text-amber-800">Quiénes Somos</h2>
@@ -26,7 +24,5 @@ export default function Vision() {
             </div>
           </div>
         </section>
-      
-    </div>
   )
 }

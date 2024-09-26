@@ -1,4 +1,4 @@
-import { Menu, X, MapPin, Mail, Phone } from "lucide-react"
+import {  MapPin, Mail, Phone } from "lucide-react"
 
 const Contacto = () => {
   return (

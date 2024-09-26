@@ -8,38 +8,17 @@ import Navegacion from '../components/Navegacion'
 
 const AuthLayout = () => {
     return (
-        <>
             <div className="min-h-screen bg-amber-50">
-                
-
+                <Navegacion/>
                 <main>
-                     <Navegacion/>
-                     <main>
-                     <main>
-                        
-                        <Productos/>
-                     </main>
-
-                     </main>
                      <Vision/>
-                     <main>
-                     
-                     <Proyecto/>
-                     <main>
-                     
                      <Servicios/>
-                     
-                     </main>
-                    
-                     </main>
+                     <Productos/>
+                     <Proyecto/>           
                     <Contacto/>
                 </main>    
-                          
-
                 <Footer/>
-            
             </div>
-        </>  
     )
 };
 

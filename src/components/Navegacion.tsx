@@ -11,7 +11,6 @@ export default function Navegacion() {
   }   
 
   return (
-    <div className="min-h-screen bg-amber-50">
       <header className="bg-amber-700 text-white">
         <div className="container mx-auto px-4 py-6 flex justify-between items-center">
           <div className="flex items-center">
@@ -41,6 +40,5 @@ export default function Navegacion() {
           </div>
         )}
       </header> 
-    </div> 
     )
 }
