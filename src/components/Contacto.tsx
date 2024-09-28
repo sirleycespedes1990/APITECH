@@ -1,4 +1,5 @@
-import {  MapPin, Mail, Phone } from "lucide-react"
+import {  MapPin, Mail } from "lucide-react"
+import { FaFacebook, FaInstagram, FaWhatsapp  } from "react-icons/fa"; 
 
 const Contacto = () => {
   return (
@@ -7,20 +8,33 @@ const Contacto = () => {
               <h2 className="text-4xl font-bold mb-8">Contáctanos</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-2xl font-semibold mb-4">Información de Contacto</h3>
+                  <h3 className="text-2xl font-semibold mb-4">Direccion</h3>
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <MapPin className="w-6 h-6 mr-2" />
-                      <p>123 Calle de las Abejas, Ciudad Miel, 12345</p>
+                      <p>Finca los totumos vereda la rayada, Santa Barbara Satander</p>
+                      <a href="https://www.google.com/maps/search/Finca+los+totumos+vereda+la+ramada,+Santa+Barbara+Santander/@6.3926365,-73.423011,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkyNC4wIKXMDSoASAFQAw%3D%3D"></a>
                     </div>
                     <div className="flex items-center">
                       <Mail className="w-6 h-6 mr-2" />
-                      <a href="mailto:info@apitech.com" className="hover:underline">info@apitech.com</a>
+                      <a href="mailto:info@apitech.com" className="hover:underline">apisersas@gmail.com</a>
                     </div>
                     <div className="flex items-center">
-                      <Phone className="w-6 h-6 mr-2" />
+                      <FaWhatsapp  className="w-6 h-6 mr-2" />
                       <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                        +1 (234) 567-890 (WhatsApp)
+                        +57 (3219856591) WhatsApp 
+                      </a>
+                    </div>
+                    <div className="flex items-center">
+                      <FaInstagram className="w-6 h-6 mr-2"/>
+                      <a href="https://www.instagram.com/apicultura_serrano/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        Instagram : APISER
+                      </a>
+                    </div>
+                    <div className="flex items-center">
+                      <FaFacebook className="w-6 h-6 mr-2"/>
+                      <a href="https://www.facebook.com/photo/?fbid=751403433665245&set=pcb.751403463665242" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                          Facebook : APISER
                       </a>
                     </div>
                   </div>

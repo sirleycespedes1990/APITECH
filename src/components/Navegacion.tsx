@@ -1,6 +1,7 @@
 import {  useState } from 'react'
 import { Menu, X } from "lucide-react"
 
+import logo from '/src/assets/img/logo.png'
 
 
 export default function Navegacion() {
@@ -11,13 +12,14 @@ export default function Navegacion() {
   }   
 
   return (
-      <header className="bg-amber-700 text-white">
+      <header className="bg-amber-900 text-white">
         <div className="container mx-auto px-4 py-6 flex justify-between items-center">
           <div className="flex items-center">
             <div className="w-16 h-16 bg-white rounded-full mr-4">
               {/* Espacio para el logo */}
+              <img src={logo} alt="Logo"/>
             </div>
-            <h1 className="text-3xl font-bold">ApiTech</h1>
+            <h1 className="text-3xl font-bold">APISER SAS</h1>
           </div>
           <nav className="hidden md:flex space-x-6">
             <a href="#inicio" className="hover:text-amber-200">Inicio</a>
