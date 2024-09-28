@@ -1,4 +1,4 @@
-import {  MapPin, Mail, Phone } from "lucide-react"
+import {  MapPin, Mail } from "lucide-react"
 import { FaFacebook, FaInstagram, FaWhatsapp  } from "react-icons/fa"; 
 
 const Contacto = () => {
