@@ -1,5 +1,6 @@
 import {  useState } from 'react'
 import { Menu, X } from "lucide-react"
+import 
 
 
 
@@ -17,7 +18,7 @@ export default function Navegacion() {
             <div className="w-16 h-16 bg-white rounded-full mr-4">
               {/* Espacio para el logo */}
             </div>
-            <h1 className="text-3xl font-bold">ApiTech</h1>
+            <h1 className="text-3xl font-bold">APISER SAS</h1>
           </div>
           <nav className="hidden md:flex space-x-6">
             <a href="#inicio" className="hover:text-amber-200">Inicio</a>

@@ -6,7 +6,9 @@ export default function Vision() {
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-8 text-amber-800">Quiénes Somos</h2>
             <p className="text-lg mb-12">
-              ApiTech es una empresa apícola líder en la producción y distribución de productos derivados de la miel. Nos especializamos en ofrecer soluciones innovadoras y de alta calidad para la industria apícola. Con años de experiencia y un equipo dedicado, nos esforzamos por proporcionar los mejores productos y servicios a nuestros clientes, siempre con un enfoque en la sostenibilidad y el cuidado del medio ambiente.
+            Apiser es una empresa dedicada a la apicultura, dedicada a la producción de material apícola y implementación de proyectos apícolas. Fundada 2020 en el municipio de santa bárbara Santander, APISER fue fundada gracias al apoyo de fondo emprender donde nació y se dedico a la fabricación y comercialización de productos apícolas en la región, innovando en sus productos para una conservar la especie de abejas. 
+Incentivando a los agricultores para la implementación de abejas en sus fincas y cuidar todas las especies de abejas en Colombia.
+
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
@@ -18,7 +20,10 @@ export default function Vision() {
               <div>
                 <h3 className="text-2xl font-bold mb-4 text-amber-800">Nuestra Visión</h3>
                 <p className="text-lg">
-                  Ser líderes globales en la industria apícola, reconocidos por nuestra innovación, calidad y compromiso con la preservación de las abejas y la biodiversidad. Aspiramos a crear un impacto positivo en el mundo a través de nuestros productos y prácticas sostenibles.
+                ser una empresa líder en el país, reconocida por la innovación y calidad de sus productos, en la cual mejoraremos cada día mas nuestros prototipos de monitoreo para hacerlos más dinámicos, amigables con las abejas y de fácil monitoreo.
+Tendremos nuestra principal atención a mejorar la calidad de nuestros productos, llevando siempre el enfoque innovador y sostenible.
+Ser una empresa líder en capacitaciones de monitoreo y sostenibilidad apícola en Colombia, la cual nos ayudara para mejorar cada día y logrando una protección a la especie de abejas en Colombia 
+
                 </p>
               </div>
             </div>
