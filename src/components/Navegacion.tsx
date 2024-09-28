@@ -1,7 +1,7 @@
 import {  useState } from 'react'
 import { Menu, X } from "lucide-react"
 
-import logo from '/src/assets/img/logo.png'
+import logo from '/img/logo.png'
 
 
 export default function Navegacion() {

@@ -3,42 +3,42 @@
         {
             "id":1,
             "descripcion": "Alza estandar fabricada en mocoro y prafinada",
-            "images": "/src/assets/img/alza_estandar.jpg"
+            "images": "/img/alza_estandar.jpg"
         },
         {
             "id":2,
             "descripcion": "Cuadro estándar alambrado fabricado en moncoro",
-            "images": "/src/assets/img/cuadro_alambrado.jpg"
+            "images": "/img/cuadro_alambrado.jpg"
         },
         {
             "id":3,
             "descripcion": "Cuadro alambrado y con cera fabricado en moncoro",
-            "images": "/src/assets/img/cuadro_estandar.jpg"
+            "images": "/img/cuadro_estandar.jpg"
         },
         {
             "id":4,
             "descripcion": "Lamina de cera 100% pura",
-            "images": "/src/assets/img/lamina_cera.jpg"
+            "images": "/img/lamina_cera.jpg"
         },
         {
             "id":5,
             "descripcion": "Piquera fabricada en moncoro",
-            "images": "/src/assets/img/piquera_mocoro.jpg"
+            "images": "/img/piquera_mocoro.jpg"
         },
         {
             "id":6,
             "descripcion": "Portanucleo de 5 cuadros fabricado en moncoro",
-            "images": "/src/assets/img/portanucleo_mocoro.jpg"
+            "images": "/img/portanucleo_mocoro.jpg"
         },
         {
             "id":7,
             "descripcion": "Tacho fabricado en moncoro y forrado en lamina galvanizada",
-            "images": "/src/assets/img/tacho_fabricado.jpg"
+            "images": "/img/tacho_fabricado.jpg"
         },
         {
             "id":8,
             "descripcion": "Overol tipo esgrima",
-            "images": "/src/assets/img/overol_esgrima.jpg"
+            "images": "/img/overol_esgrima.jpg"
         }
     ]
 }
