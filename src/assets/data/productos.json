@@ -2,41 +2,49 @@
     "productos":[
         {
             "id":1,
+            "name": "ALZA ESTADAR",
             "descripcion": "Alza estandar fabricada en mocoro y prafinada",
             "images": "/img/alza_estandar.jpg"
         },
         {
             "id":2,
+            "name": "CUADRO ALAMBRADO",
             "descripcion": "Cuadro estándar alambrado fabricado en moncoro",
             "images": "/img/cuadro_alambrado.jpg"
         },
         {
             "id":3,
+            "name": "CUADRO ESTANDAR",
             "descripcion": "Cuadro alambrado y con cera fabricado en moncoro",
             "images": "/img/cuadro_estandar.jpg"
         },
         {
             "id":4,
+            "name": "LAMINA DE CERA",
             "descripcion": "Lamina de cera 100% pura",
             "images": "/img/lamina_cera.jpg"
         },
         {
             "id":5,
+            "name": "PIQUERA MOCORO",
             "descripcion": "Piquera fabricada en moncoro",
             "images": "/img/piquera_mocoro.jpg"
         },
         {
             "id":6,
+            "name": "PORTA NUCLEO",
             "descripcion": "Portanucleo de 5 cuadros fabricado en moncoro",
             "images": "/img/portanucleo_mocoro.jpg"
         },
         {
             "id":7,
+            "name": "TACHO FABRICADO",
             "descripcion": "Tacho fabricado en moncoro y forrado en lamina galvanizada",
             "images": "/img/tacho_fabricado.jpg"
         },
         {
             "id":8,
+            "name": "OVEROL ESGRIMA",
             "descripcion": "Overol tipo esgrima",
             "images": "/img/overol_esgrima.jpg"
         }

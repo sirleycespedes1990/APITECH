@@ -1,6 +1,10 @@
 
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
-import  AuthLayout  from './layout/AuthLayout'  // te hacia falta en el import AuthLayout
+import  AuthLayout  from './layout/AuthLayout'  
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";//
+
+
 
 
 function App() {

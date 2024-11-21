@@ -1,46 +1,37 @@
-import {  useState } from 'react'
-import { Menu, X } from "lucide-react"
+import { useState } from 'react';
+import LOGO_cafe from '../assets/img/LOGO_cafe.svg';
 
-import logo from '/img/logo.png'
-
-
-export default function Navegacion() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }   
+function Navegacion() {
+  // Estado para manejar la sección activa
+  const [activeSection, setActiveSection] = useState('');
 
   return (
-      <header className="bg-amber-900 text-white">
-        <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-          <div className="flex items-center">
-            <div className="w-16 h-16 bg-white rounded-full mr-4">
-              {/* Espacio para el logo */}
-              <img src={logo} alt="Logo"/>
-            </div>
-            <h1 className="text-3xl font-bold">APISER SAS</h1>
-          </div>
-          <nav className="hidden md:flex space-x-6">
-            <a href="#inicio" className="hover:text-amber-200">Inicio</a>
-            <a href="#servicios" className="hover:text-amber-200">Servicios</a>
-            <a href="#productos" className="hover:text-amber-200">Productos</a>
-            <a href="#proyectos" className="hover:text-amber-200">Proyectos</a>
-            <a href="#contacto" className="hover:text-amber-200">Contáctanos</a>
-          </nav>
-          <button className="md:hidden" onClick={toggleMenu}>
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+    <nav className="  bg-burntUmber bg-opacity-10 shadow-md py-6">
+      <div className="container mx-auto flex items-center justify-between">
+        {/* Logo a la izquierda */}
+        <div className="w-60 h-12">
+          <img src={LOGO_cafe} alt="Logo" className="w-full h-full" />
         </div>
-        {isMenuOpen && (
-          <div className="md:hidden bg-amber-600 py-2">
-            <a href="#inicio" className="block px-4 py-2 hover:bg-amber-500">Inicio</a>
-            <a href="#servicios" className="block px-4 py-2 hover:bg-amber-500">Servicios</a>
-            <a href="#productos" className="block px-4 py-2 hover:bg-amber-500">Productos</a>
-            <a href="#proyectos" className="block px-4 py-2 hover:bg-amber-500">Proyectos</a>
-            <a href="#contacto" className="block px-4 py-2 hover:bg-amber-500">Contáctanos</a>
+
+        {/* Botones de Navegación a la derecha */}
+        <div className="flex space-x-2 sm:space-x-4 p-18  rounded-lg">
+          {['productos', 'servicios', 'contactanos'].map((section) => (
+            <button
+              key={section}
+              className={`px-4 py-2 rounded-md transition-all duration-300 transform text-18pt sm:text-base ${
+                activeSection === section
+                  ? 'bg-[#FF9300] text-white shadow-lg translate-y-[-2px]'
+                  : 'bg-transparent text-red-900 hover:bg-amber-500 text-burntUmber font-weight: 700 '
+              }`}
+              onClick={() => setActiveSection(section)}
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </button>
+          ))}
+        </div>
       </div>
-        )}
-      </header> 
-    )
+    </nav>
+  );
 }
+
+export default Navegacion;
