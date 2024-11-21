@@ -39,7 +39,7 @@ export default function Navegacion() {
             <a href="#productos" className="block px-4 py-2 hover:bg-amber-500">Productos</a>
             <a href="#proyectos" className="block px-4 py-2 hover:bg-amber-500">Proyectos</a>
             <a href="#contacto" className="block px-4 py-2 hover:bg-amber-500">Contáctanos</a>
-          </div>
+      </div>
         )}
       </header> 
     )
