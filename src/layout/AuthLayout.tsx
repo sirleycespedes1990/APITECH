@@ -3,8 +3,8 @@ import Navegacion from "../components/Navegacion.tsx";
 import Titulo from "../components/Titulo.tsx";
 import Mision from "../components/Mision.tsx";
 import Vision from "../components/Vision.tsx";
-/*import Productos from "../components/Productos.tsx";
-import ProductosCarousel from "../components/Productos.tsx";
+import Productos from "../components/Productos.tsx";
+/*import ProductosCarousel from "../components/Productos.tsx";
 /*import Imagen from "../components/Imagen.tsx";
 import Servicios from "../components/Servicios.tsx";
 import Contactenos from "../components/Contactenos.tsx";
@@ -18,8 +18,8 @@ const AuthLayout = () => {
                      <Titulo/>
                      <Mision/>
                      <Vision/>
-                     {/*<Productos/> 
-                     <ProductosCarousel/> 
+                     <Productos/> 
+                     {/*<ProductosCarousel/> 
                      {/*<Imagen/>        
                      <Servicios/>
                      <Contactenos/>*/}

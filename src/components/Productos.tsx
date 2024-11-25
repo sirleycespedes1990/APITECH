@@ -1,69 +1,95 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import ImgMegafono from '../assets/img/ImgMegafono.png';
 import Whasp from '../assets/img/Whasp.png';
-import productosData from '../assets/data/productos.json';
 
-interface Producto {
-  id: number;
-  name: string;
-  descripcion: string;
-  images: string;
-}
+import MobileMockup from '../assets/img/Mobile-Mockup.png'
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-
-
-
+const products = [
+  {
+    title: 'ALZA ESTANDAR',
+    description: 'Fabricada en mocoro y parafinada.',
+    image: '/assets/img/alza_estandar.png',
+  },
+  {
+    title: 'CUADRO ESTÁNDAR',
+    description: 'Alambrado y fabricado en monocro.',
+    image: '/placeholder.svg?height=200&width=300',
+  },
+  {
+    title: 'LAMINA DE CERA',
+    description: 'Laminas de 60x20 cm de cera 100% pura.',
+    image: '/placeholder.svg?height=200&width=300',
+  },
+  // Puedes agregar más productos aquí
+]
 
 export default function ProductSection() {
-  const [  productos, setProductos ] = useState<Producto[]>([])
-  useEffect(() => {
-    setProductos(productosData.productos);
-  }, []);
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? products.length - 1 : prevIndex - 1))
+  }
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === products.length - 1 ? 0 : prevIndex + 1))
+  }
+
   return (
-    <section className="bg-red-900 py-16">
+    <section className="bg-[#5c2c06] text-white py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-white text-center mb-4">NUESTROS PRODUCTOS</h2>
-        <p className="text-lg text-white text-center mb-12">
-          En Apiser, contamos con una variedad de productos
+        <h2 className="text-3xl font-bold text-center mb-6">Nuestros Productos</h2>
+        <p className="text-center mb-8">
+          En APISER SAS, contamos con una variedad de productos apícolas de alta calidad que se adaptan a las necesidades de apicultores de todo Colombia. Explora nuestras categorías y encuentra el equipo perfecto para tu apiario.
         </p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {productos.map((product, index) => (
-            <div key={index} className="bg-amber-100 rounded-lg overflow-hidden shadow-lg">
-              {/* Aquí se muestra solo la imagen específica del producto */}
-              <div className="h-48 bg-gray-300">
-                <img 
-                  src={product.images} 
-                  alt={product.name} 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-                <p className="text-sm mb-4">{product.descripcion}</p>
-                <div className="bg-sky-300 rounded-full py-2 px-4 flex items-center justify-center cursor-pointer hover:bg-sky-400 transition-colors">
-                  <img src={Whasp} alt="WhatsApp Icon" className="mr-2 w-5 h-5" />
-                  <span className="text-sm font-medium">Solicitar producto</span>
+        <div className="relative flex items-center justify-center mb-12">
+          <button onClick={handlePrev} className="absolute left-0 z-10">
+            <ChevronLeft className="w-8 h-8 text-white" />
+          </button>
+          <div className="flex overflow-hidden w-full max-w-3xl">
+            {products.map((product, index) => (
+              <div
+                key={index}
+                className={`flex-shrink-0 w-full transition-transform duration-500 ${
+                  index === currentIndex ? 'translate-x-0' : 'translate-x-full'
+                }`}
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              >
+                <div className="bg-white text-black rounded-lg shadow-lg p-4 mx-2">
+                  <img src={product.image} alt={product.title} width={300} height={200} className="mx-auto" />
+                  <h3 className="text-xl font-bold mt-4">{product.title}</h3>
+                  <p className="mt-2">{product.description}</p>
+                  <img src={Whasp} alt={product.title} width={300} height={200} className="mx-auto bg-[#00bfa5] text-white hover:bg-[#00a086]" />
+                  Solicitar Producto
+                  
                 </div>
               </div>
-            </div>
+            ))}
+          </div>
+          <button onClick={handleNext} className="absolute right-0 z-10">
+            <ChevronRight className="w-8 h-8 text-white" />
+          </button>
+        </div>
+        <div className="flex justify-center mt-4 mb-12">
+          {products.map((_, index) => (
+            <div
+              key={index}
+              className={`h-2 w-2 rounded-full mx-1 ${
+                index === currentIndex ? 'bg-white' : 'bg-gray-500'
+              }`}
+            />
           ))}
         </div>
-       
-
-        <div className="mt-16 bg-amber-400 rounded-lg p-6 flex items-center">
-          <div className="w-16 h-16 bg-gray-300 rounded-full mr-6">
-          <img 
-                src={ImgMegafono} 
-                alt="Apicultor trabajando" 
-                className="w-full md:h-[70vh] h-auto object-contain md:object-cover -mt-8 md:mt-0"
-              />
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-2">NUEVO PRODUCTO</h3>
-            <p className="text-lg">
-              OPTIMIZA LA GESTIÓN DE TUS COLMENAS CON NUESTRA NUEVA APP
-            </p>
+        
+        {/* Sección de Nuevo Producto */}
+        <div className="bg-[#ffa500] text-black p-6 rounded-lg">
+          <h3 className="text-2xl font-bold mb-4">NUEVO PRODUCTO</h3>
+          <p className="mb-4">
+            Optimiza la gestión de tus colmenas con nuestra nueva App de Gestión de Apiarios (APITECH), desarrollada especialmente para apicultores que desean monitorear sus apiarios de manera eficiente. Con esta innovadora aplicación, podrás recibir datos precisos sobre la salud de tus colmenas, la producción de miel y otros indicadores clave, todo desde la comodidad de tu teléfono o computadora.
+          </p>
+          <div className="flex justify-center space-x-4">
+            <img src = {ImgMegafono} alt="App Screenshot 1" width={150} height={200} className="rounded-lg" />
+            <img src= {MobileMockup} alt="App Screenshot 2" width={150} height={200} className="rounded-lg" />
           </div>
         </div>
       </div>
