@@ -3,43 +3,27 @@ import ImgMiel from '../assets/img/ImgMiel.png'
 
 const Imagen = () => {
   return (
-    <div className="relative w-full bg-[#EDA900]">
+    <div className="relative w-full bg-[#EDA900] overflow-hidden">
       {/* Fondo de panal */}
-      <div 
+      <div
         className="absolute inset-0 opacity-90"
-        style={{
-          backgroundImage: `url(${Rombo_amarillo})`,
-          backgroundSize: '150px 150px',
-          backgroundRepeat: 'repeat'
-        }}
+        style={{ backgroundImage: `url(${Rombo_amarillo})`, }}
       />
 
       {/* Contenedor Principal */}
-      <div className="relative z-10 flex  justify-between max-w-7xl mx-auto p-8 gap-8">
-        {/* Imagen de la miel (lado izquierdo) */}
-        <div className="relative">
+      <div className="relative z-10 flex max-w-7xl mx-auto gap-8">
+        <div className="aboslute">
           <img
             src={ImgMiel}
             alt="Miel"
-            className="w-[350px] h-auto drop-shadow-2xl"
+            className="w-[400px] h-auto drop-shadow-2xl"
           />
         </div>
-
-        {/* Texto en el centro */}
-        <div className="text-center md:text-left">
-          <span className="text-[#e1600e] text-18pt md:text-4xl font-bold tracking-normal">
+        <div className='flex flex-col items-center'>
+          <div className="w-0 h-0 border-l-[30px] border-r-[30px] border-b-[30px] border-b-burntUmber border-l-transparent border-r-transparent rotate-180"></div>
+          <a href="" className="text-[#e1600e] text-lg font-bold underline cursor-pointer h-8">
             Conoce nuestra nueva APP
-          </span>
-          <div className="h-1 bg-[#e1600e] -[200px] mx-auto md:mx-0 mt-0"></div>
-        </div>
-
-        {/* Imagen del móvil flotante (lado derecho) */}
-        <div className="hidden md:block relative">
-          <img
-            src={Rombo_amarillo} // Usa aquí tu imagen del móvil
-            alt="Móvil"
-            className="w-[250px] h-auto drop-shadow-2xl rotate-6"
-          />
+          </a>
         </div>
       </div>
     </div>

@@ -14,21 +14,21 @@ import Footer from "../components/Footer.tsx";
 
 const AuthLayout = () => {
     return (
-            <div className="min-h-screen bg-amber-50">
-                <Navegacion/>
-                <main>
-                     <Titulo/>
-                     <Mision/>
-                     <Vision/>
-                     <Productos/> 
-                     <Imagen/> 
-                    <Servicios/>
-                   {/*  <ProductosCarousel/> */ }
-                     <Contactenos/>
-                </main>     
-                <Footer/> 
-            </div>
+        <div className="min-h-screen bg-amber-50">
+            <Navegacion />
+            <main>
+                <Titulo />
+                <Mision />
+                <Vision />
+                <Productos />
+                <Imagen />
+                <Servicios />
+                {/*  <ProductosCarousel/> */}
+                <Contactenos />
+            </main>
+            <Footer />
+        </div>
     )
 };
 
-export default  AuthLayout ;
+export default AuthLayout;

@@ -1,35 +1,43 @@
-
-
-
-
-
-
-
-
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProductCarousel from  
+import Whasp from '../assets/img/Whasp.png';
+
+// import ProductCarousel from  
 
 // Asegúrate de importar tus imágenes de productos
-import producto1 from '../assets/img/producto1.jpg';
-import producto2 from '../assets/img/producto2.jpg';
-import producto3 from '../assets/img/producto3.jpg';
+import AlzaEstandar from '../assets/img/AlzaEstandar.png'
+import CuadroEstandar from '../assets/img/CuadroEstandar.jpg'
+import LaminaCera from '../assets/img/LaminaCera.jpg'
 
 // ... importa más productos según sea necesario
 
 const productos = [
-  { id: 1, nombre: "Alza Estándar", imagen: producto1, descripcion: "Fabricado en mocoro y parafinada" },
-  { id: 2, nombre: "Producto 2", imagen: producto2, descripcion: "Descripción del producto 2" },
-  { id: 3, nombre: "Producto 3", imagen: producto3, descripcion: "Descripción del producto 3" },
+  {
+    nombre: 'ALZA ESTANDAR',
+    descripcion: 'Fabricada en mocoro y parafinada.',
+    imagen: AlzaEstandar,
+  },
+  {
+    nombre: 'CUADRO ESTÁNDAR',
+    descripcion: 'Alambrado y fabricado en monocoro.',
+    imagen: CuadroEstandar,
+  },
+  {
+
+
+    nombre: 'LAMINA DE CERA',
+    descripcion: 'Laminas de 60x20 cm de cera 100% pura.',
+    imagen: LaminaCera,
+  },
   // ... agrega más productos según sea necesario
 ];
 
 const ProductCarousel = () => {
   const settings = {
     dots: true,
-    infinite: true,
-    speed: 500,
+    infinite: false,
+    speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -44,20 +52,40 @@ const ProductCarousel = () => {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1 
+          slidesToScroll: 1
         }
       }
     ]
   };
 
-   return (
+  return (
     <div className="w-full px-4 py-12 bg-amber-100">
-      <h2 className="text-3xl font-bold text-center mb-8">Nuestros Productos</h2>
       <div className="relative px-8">
-        <Slider {...settings}>
+        <Slider {...settings} >
           {productos.map((product) => (
-            <div key={product.id} className="px-2">
-              <ProductCarousel product={product} />
+            <div key={product.nombre} className="px-2">
+              <div className=" bg-[#f2d291] text-burntUmber  rounded-[1rem] p-4 w-full h-[500px]  justify-center ">
+                <div className="flex-grow flex items-center justify-center">
+                  <img src={product.imagen} alt={product.nombre} className="max-w-full h-[300px] object-fill" />
+                </div>
+                <h3 className="text-xl font-bold mt-4 ">{product.nombre}</h3>
+                <p className="mb-10  text-18pt">{product.descripcion}</p>
+                <a
+                  href={`https://wa.me/message/FOAVI6X7UGWPK1?text=Hola, me interesa obtener más información sobre ${encodeURIComponent(product.nombre)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#009DB5] text-white px-6 py-2 rounded-3 flex items-center justify-center hover:bg-[#1f7576] transition-colors duration-300 rounded-custom"
+                >
+                  <img
+                    src={Whasp}
+                    alt="WhatsApp"
+                    width={24}
+                    height={50}
+                    className="mr-2 "
+                  />
+                  <span className="text-white font-semibold">Solicitar producto</span>
+                </a>
+              </div>
             </div>
           ))}
         </Slider>
@@ -66,4 +94,4 @@ const ProductCarousel = () => {
   );
 };
 
-export default ProductCarousel;*/
+export default ProductCarousel;

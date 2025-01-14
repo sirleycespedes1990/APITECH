@@ -12,7 +12,7 @@ export default function ServicesSection() {
   };
 
   return (
-    <section className="w-full py-12 bg-[#8B2703]">
+    <section className="w-full py-12 bg-[#8B2703]" id='servicios'>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Nuestros Servicios</h2>
