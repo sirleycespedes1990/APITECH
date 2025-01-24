@@ -23,7 +23,7 @@ const AuthLayout = () => {
                 <Productos />
                 <Imagen />
                 <Servicios />
-                {/*  <ProductosCarousel/> */}
+                {/*  <ProductosCarousel/>*/}
                 <Contactenos />
             </main>
             <Footer />

@@ -9,6 +9,11 @@ import Whasp from '../assets/img/Whasp.png';
 import AlzaEstandar from '../assets/img/AlzaEstandar.png'
 import CuadroEstandar from '../assets/img/CuadroEstandar.jpg'
 import LaminaCera from '../assets/img/LaminaCera.jpg'
+import CuadroAlambrado from '../assets/img/CuadroAlambrado.jpg'
+import OverolEsgrima from '../assets/img/OverolEsgrima.jpg'
+import PiqueraMocoro from '../assets/img/PiqueraMocoro.jpg'
+import PortanucleoMocoro from '../assets/img/PortanucleoMocoro.png'
+import tacho_fabricado from '../assets/img/tacho_fabricado.png'
 
 // ... importa más productos según sea necesario
 
@@ -30,6 +35,42 @@ const productos = [
     descripcion: 'Laminas de 60x20 cm de cera 100% pura.',
     imagen: LaminaCera,
   },
+  {
+
+
+    nombre: 'CUADRO ALAMBRADO',
+    descripcion: 'Laminas de 60x20 cm de cera 100% pura.',
+    imagen: CuadroAlambrado,
+  },
+  {
+
+
+    nombre: 'OVEROL ESGRIMA',
+    descripcion: 'Laminas de 60x20 cm de cera 100% pura.',
+    imagen: OverolEsgrima,
+  },
+  {
+
+
+    nombre: 'PIQUERA MOCORO',
+    descripcion: 'Laminas de 60x20 cm de cera 100% pura.',
+    imagen: PiqueraMocoro,
+  },
+  {
+
+
+    nombre: 'PORTA NUCLEO MOCORO',
+    descripcion: 'Laminas de 60x20 cm de cera 100% pura.',
+    imagen: PortanucleoMocoro,
+  },
+  {
+
+
+    nombre: 'TACHO FABRICADO',
+    descripcion: 'Laminas de 60x20 cm de cera 100% pura.',
+    imagen: tacho_fabricado,
+  },
+
   // ... agrega más productos según sea necesario
 ];
 

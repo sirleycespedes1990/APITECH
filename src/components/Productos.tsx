@@ -1,6 +1,6 @@
 import ImgMegafono from '../assets/img/ImgMegafono.png';
 import MobileMockup from '../assets/img/Mobile-Mockup.png'
-import ProductCarousel from './ProductCarousel';
+import ProductCarousel from '../components/ProductCarousel';
 
 export default function ProductSection() {
   return (
