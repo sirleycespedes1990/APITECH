@@ -8,7 +8,7 @@ function Navegacion() {
   const [navigateOptions] = useState([
     { name: 'Productos', path: '#productos' },
     { name: 'Servicios', path: '#servicios' },
-    { name: 'Contáctanos', path: '#contactanos' },
+    { name: 'Contáctanos', path: '#Formulario' },
   ]);
   // const [activeSection, setActiveSection] = useState('');
 

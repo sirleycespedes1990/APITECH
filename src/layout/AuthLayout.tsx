@@ -9,7 +9,8 @@ import Imagen from "../components/Imagen.tsx";
 import Servicios from "../components/Servicios.tsx";
 /*import ProductosCarousel from "../components/Productos.tsx";*/
 
-import Contactenos from "../components/Contactenos.tsx";
+import Formulario from "../components/Formulario.tsx";
+/*import Prueba from "../components/prueba.tsx";*/
 import Footer from "../components/Footer.tsx";
 
 const AuthLayout = () => {
@@ -24,7 +25,8 @@ const AuthLayout = () => {
                 <Imagen />
                 <Servicios />
                 {/*  <ProductosCarousel/>*/}
-                <Contactenos />
+                <Formulario/>
+                {/* <Prueba/>*/}
             </main>
             <Footer />
         </div>

@@ -17,7 +17,7 @@
  
    const handleWhatsAppClick = (message: string | number | boolean) => {
      const encodedMessage = encodeURIComponent(message);
-     window.open(`https://wa.me/+573000000000?text=${encodedMessage}`, '_blank');
+     window.open(`https://wa.me/+573219856591?text=${encodedMessage}`, '_blank');
    };
  
    const services = [
@@ -76,15 +76,15 @@
          </div>
  
          {/* Contenedor de las tarjetas */}
-         <div className="flex flex-wrap justify-center gap-8 p-0">
+         <div className="flex flex-wrap justify-center  gap-6 p-6">
            {services.map((service, index) => (
              <div
                key={index}
-               className="bg-[#F2d291] rounded-lg p-0 flex flex-col justify-between 
+               className="bg-[#F2d291]  p-0 flex flex-col justify-between 
                text-[#8B2703] relative transform transition-transform duration-300 hover:scale-105 
-               min-h-[500px] max-w-[350px] flex-grow overflow-hidden"
+               min-h-[500px] max-w-[350px] flex-grow  !rounded-none custom-border "
              >
-               <div className="p-6 flex-grow">
+               <div className=" p-6 flex-grow rounded-none ">
                  <h3 className="text-xl font-bold text-[#8B2703] mb-4">{service.title}</h3>
                  <p className="text-sm text-gray-700 mb-4">{service.description}</p>
                  {service.list && (
@@ -98,7 +98,7 @@
                  )}
                  {/* Indicaciones para la primera tarjeta */}
                  {service.indicaciones && (
-                   <div className="mt-4">
+                   <div className="mt-4 rounded-none ">
                      <p className="text-sm font-semibold text-gray-800">Indicaciones:</p>
                      <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
                        {indicaciones.map((indicacion, i) => (
